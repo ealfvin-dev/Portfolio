@@ -12,6 +12,12 @@ h1 {
     border-color: rgb(252, 236, 12);
 }
 
+.navbar {
+    border-color: rgb(190, 190, 190);
+    border-width: 1px;
+    border-bottom-style: solid;
+}
+
 .card {
     margin-top: 3%;
     margin-bottom: 6%;
@@ -19,9 +25,14 @@ h1 {
     margin-left: 1%;
 }
 
-.container {
-    margin-right: 10%;
-    width: 90%;
+.container-full {
+    margin-right: 0.5%;
+    margin-left: 7%;
+}
+
+
+.projectText {
+    padding-right: 5%;
 }
 
 .row {
