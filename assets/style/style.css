@@ -47,3 +47,30 @@ h1 {
 .portfolioImage:hover {
     opacity: 0.80;
 }
+
+.fixed-bottom {
+    padding: 0%;
+}
+
+.footer{
+    text-align: center;
+    margin: auto;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 0.4%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(121, 121, 121);
+    color: white;
+    font-size: 8pt;
+    border-top-color: rgb(252, 236, 12);
+    border-top-style: solid;
+    border-top-width: 10%;
+}
+
+.contact-form {
+    margin-left: 30%;
+    margin-right: 30%;
+}
