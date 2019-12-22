@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">Erik Alfvin</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,8 +21,8 @@
             <a class="nav-item nav-link" href="contact.html">Contact</a>
             <a class="nav-item nav-link" href="aboutMe.html">About Me</a>
             </div>
-        </div>
     </nav>
+    </div>
     
     <h1>PyMac</h1>
 
@@ -31,12 +30,16 @@
         <div class="row">
             <div class="col-lg">
                 <p class="projectText">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A velit itaque maiores, maxime est eum nesciunt perferendis fuga commodi non officia quisquam ratione vero laborum id sed nostrum repudiandae libero.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia minus cupiditate, id possimus quaerat recusandae odio labore quo enim deserunt sapiente temporibus nostrum laborum iure ad tenetur nesciunt magni explicabo.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus natus, suscipit atque repudiandae accusantium nesciunt dolore? Officia excepturi odit praesentium nulla minima, dolore nam ab quod facere architecto eveniet sed?
+                Developed data reduction software to calculate results for precision mass measurements. In metrology we disseminate mass starting at 1 kg, working down to 1 mg and up to 100,000 lb. 
+                Weighing designs are used to compare summations of masses and set up an outline for the linear system of equations that must be solved to calculate the mass of each item in the design. 
+                The software uses a least squares best fit 
+                matrix solution to calculate results from measurement data. An F and T test are performed to evaluate the standard deviation (residuals) of the best fit, and the calculated results 
+                of a known weight in the design against a reference value, respectively.
                 </p>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae sed, aliquid, modi, accusantium minima labore sunt aperiam unde at itaque nesciunt odio saepe? Cum quod vel soluta saepe ex dolorem!
+                The program is written as a substitue for MassCode, developed by the Mass and Force group at the National Institute of Standards and Technology. PyMac offers additional features 
+                such as the ability to correct for air buoyancy on each line of measurements, the ability to correct for center of mass height differences given a local gravity gradient, and 
+                eventually a front end to make the program more user-friendly. 
                 </p>
             </div>
 
