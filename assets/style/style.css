@@ -84,14 +84,14 @@ h1 {
 }
 
 #Earth {
-    height: 5%;
-    width: 5%;
-    background-color: whitesmoke;
+    height: 8%;
+    width: 8%;
+    background-color: lightskyblue;
     border-radius: 50%;
     display: inline-block;
     position: absolute;
-    left: 47.5%;
-    top: 47.5%;
+    left: 46%;
+    top: 46%;
 }
 
 #Sat {
