@@ -103,14 +103,6 @@ function orbitSimulation(){
             window.clearInterval(runOrbit);
             alert("Satellite crashed!");
         }
-
-        if (iter / 360 > 23) {
-            if (ydir === 1) {
-                var hours = Math.floor(iter/360);
-                var min = Math.floor((iter % 360) / 6);
-                alert(hours + " hours, " + min + " minutes");
-            }
-        }
     }
 }
 
