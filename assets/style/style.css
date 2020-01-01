@@ -1,3 +1,9 @@
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 150%;
+    font-size: 12pt;
+}
+
 h1 {
     font-size: 58pt;
     font-family: 'Roboto', sans-serif;
@@ -38,6 +44,10 @@ h1 {
 .row {
     padding-left: 2%;
     padding-right: 2%;
+}
+
+#GravityEq {
+    width: 180px;
 }
 
 .card:hover {
