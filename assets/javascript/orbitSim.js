@@ -3,6 +3,7 @@ var runOrbit;
 function orbitSimulation(){
     document.getElementById("Hours").style.visibility = "visible";
     //document.getElementById("Period").style.visibility = "visible";
+    document.getElementById("Hours").innerHTML = "Elapsed Time = 0 Hours";
 
     const earth = document.getElementById("Earth");
     const sat = document.getElementById("Sat");
@@ -52,11 +53,6 @@ function orbitSimulation(){
     function run() {
         r = Math.sqrt(Math.pow(p1[0] - satPos[0], 2) + Math.pow(p1[1] - satPos[1], 2));
 
-        if (r < 6.378 * Math.pow(10, 6)) {
-            window.clearInterval(runOrbit);
-            alert("Satellite crashed!");
-        }
-
         //Find new rhat vector (unit vector that points from Sat to Earth):
         if (p1[0] < satPos[0]){
             xDir = -1;
@@ -101,6 +97,19 @@ function orbitSimulation(){
         iter++;
         if (iter % 360 === 0) {
             document.getElementById("Hours").innerHTML = "Elapsed Time = " + iter / 360 + " Hours";
+        }
+
+        if (r < 6.378 * Math.pow(10, 6)) {
+            window.clearInterval(runOrbit);
+            alert("Satellite crashed!");
+        }
+
+        if (iter / 360 > 23) {
+            if (ydir === 1) {
+                var hours = Math.floor(iter/360);
+                var min = Math.floor((iter % 360) / 6);
+                alert(hours + " hours, " + min + " minutes");
+            }
         }
     }
 }
