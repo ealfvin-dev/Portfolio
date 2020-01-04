@@ -41,25 +41,33 @@
                     </div>
                     <button type="button" class="btn btn-success" onclick="orbitSimulation()">Run</button>
                     <button type="button" class="btn btn-danger" onclick="stopSimulation()">Stop</button>
+                    <button type="button" class="btn btn-light" onclick="thrustUp()">Thrust Up</button>
+                    <button type="button" class="btn btn-light" onclick="thrustDown()">Thrust Down</button>
                 </form>
                 <br/>
-                <h3 id="Hours">Elapsed Time = 0 Hours</h3>
+                <h3 id="HoursMobile">Elapsed Time = 0 Hours</h3>
+                <h3 id="AltMaxMobile">Max Altitude = 0 km</h3>
+                <h3 id="AltMinMobile">Max Altitude = 0 km</h3>
                 <br/>
                 <p>
-                    Enter a satellite's initial altitude and velocity to trace its orbital path around the earth. The size of the Earth is to scale relative to the orbital altitude of the satellite.
+                    Enter a satellite's initial altitude and velocity to trace its orbital path around the Earth. The orbital path is to scale relative to the size of the Earth.
                     Gravity is assumed to be the only force acting on the satellite, where
                 </p>
                 <img id="GravityEq" src="assets/images/gravityEq.jpg" alt="Equation for the force of gravity"/>
                 <p>
                     <br/>
-                    For reference, the International Space Station orbits at ~ 405 km above the surface at an average velocity of 7.66 km/s and makes about 15.5 orbits per day.
-                    Geosynchronous satellites orbit at an altitude of 35,786 km above the surface at a speed of 3.075 km/s, making one orbit every 23 hours, 56 minutes.
+                    Use the thrusters to increase or decrease the satellite's velocity by 5 % and move it into different orbits. <br/>
+                    For reference, the International Space Station orbits at ~ 405 km above the surface at an average velocity of 7.66 km/s.
+                    Geosynchronous satellites orbit at an altitude of 35,786 km above the surface at a speed of 3.075 km/s.
                 </p>
             </div>
             <div class="col-lg-1">
 
             </div>
             <div class="col-lg-7" id="orbitBox">
+                <div id="Hours">Elapsed Time = 0 Hours</div>
+                <div id="AltMax">Max Altitude = 0 km</div>
+                <div id="AltMin">Min Altitude = 0 km</div>
 
                 <div id="Earth"></div>
                 <div id="Sat"></div>

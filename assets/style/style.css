@@ -4,6 +4,10 @@ body {
     font-size: 12pt;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 h1 {
     font-size: 58pt;
     font-family: 'Roboto', sans-serif;
@@ -117,7 +121,45 @@ h1 {
 }
 
 #Hours {
-    visibility: hidden;
+    position: absolute;
+    left: 3%;
+    top: 3%;
+    height: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+#AltMax {
+    position: absolute;
+    left: 3%;
+    top: 8%;
+    height: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+#AltMin {
+    position: absolute;
+    left: 3%;
+    top: 13%;
+    height: 5%;
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+#HoursMobile {
+    display: none;
+}
+
+#AltMaxMobile {
+    display: none;
+}
+
+#AltMinMobile {
+    display: none;
 }
 
 @media (orientation: portrait) {
@@ -130,5 +172,23 @@ h1 {
 @media (max-width: 600px) {
     h1 {
         font-size: 42pt;
+    }
+    #HoursMobile {
+        display: block;
+    }
+    #AltMaxMobile {
+        display: block;
+    }
+    #AltMinMobile {
+        display: block;
+    }
+    #Hours {
+        display: none;
+    }
+    #AltMax {
+        display: none;
+    }
+    #AltMin {
+        display: none;
     }
 }
