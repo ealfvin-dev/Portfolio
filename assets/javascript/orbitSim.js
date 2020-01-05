@@ -5,6 +5,16 @@ var ra;
 var rb;
 
 function orbitSimulation(){
+    try {
+        window.clearInterval(runOrbit);
+    }
+    catch(TypeError) {
+        //pass
+    }
+    finally {
+        //pass
+    }
+
     document.getElementById("HoursMobile").innerHTML = "Elapsed Time = 0 Hours";
     document.getElementById("AltMaxMobile").innerHTML = "Max Altitude = 0 km";
     document.getElementById("AltMinMobile").innerHTML = "Min Altitude = 0 km";

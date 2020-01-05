@@ -4,7 +4,7 @@ body {
     font-size: 12pt;
 }
 
-body::-webkit-scrollbar {
+.noScroll::-webkit-scrollbar {
     display: none;
 }
 
